@@ -1,7 +1,9 @@
 # JavaScriptExam-A 🔱
 Yellow Flower's Bloom 🟡 Welcome! This is my first uploaded JavaScipt exam for education. ⚡️
+Made by Nikke. 
 ## The Exam's Description 🌟
-The description is writen in Hungarian, so if ya can't read it, just use Google. ._.
+The description is writen in Hungarian, so if ya can't read it, just use Google.
+Also it's possible that the translation will contain missunderstandings too...
 ### 1. 
     (Játékok ajánlása) Több ismerősöd is megkeresett azzal, hogy játékokat ajánlj neki. Mivel most már annyi kérést kaptál, hogy nehéz átlátni. Ennek segítésére azt találtad ki, hogy összedobsz egy gyors weblapot, amely a következők szerint működik:
     • Lehessen egy legördülő listával (vagy bármilyen más módszerrel) választani játékok listájából (legyen legalább 5 játék)!
