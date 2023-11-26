@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hóesés szimuláció</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    .snowfall {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .snowfall span {
+      padding: 5px;
+    }
+    .snowfall .red {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hóesés szimuláció</h1>
+    <div class="snowfall" id="snowfall-display"></div>
+    <button class="btn btn-primary" onclick="generateSnowfall()">Generálás</button>
+    <button class="btn btn-secondary" onclick="changeSnowfall()">Változtatás</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

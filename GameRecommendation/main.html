@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Játék ajánlás</title>
+  <style>
+    #game-info {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Játék ajánlás</h1>
+  <label for="game-select">Válaszd ki a játékot:</label>
+  <select id="game-select">
+    <option value="">Válassz játékot</option>
+    <option value="minecraft">Minecraft</option>
+    <option value="fortnite">Fortnite</option>
+    <option value="among-us">Among Us</option>
+    <option value="valorant">Valorant</option>
+    <option value="fall-guys">Fall Guys</option>
+  </select>
+
+  <div id="game-info">
+    <h2 id="game-title"></h2>
+    <p id="game-description"></p>
+    <div>
+      <input type="radio" id="recommend" name="rating" value="recommend">
+      <label for="recommend">Ajánlott</label>
+      <input type="radio" id="not-recommend" name="rating" value="not-recommend">
+      <label for="not-recommend">Nem ajánlott</label>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
