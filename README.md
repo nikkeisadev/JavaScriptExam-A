@@ -1,5 +1,5 @@
 # JavaScriptExam-A 🔱
-Yellow Flower's Bloom 🟡
+```Yellow Flower's Bloom 🟡```
 Welcome! This is my first uploaded JavaScipt exam for education. ⚡️
 ## The Exam's Description 🌟
 The description is writen in Hungarian, so if ya can't read it, just use Google. ._.
