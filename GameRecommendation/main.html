@@ -1,36 +1,138 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Játék ajánlás</title>
+  <title>Game Recommender</title>
   <style>
     #game-info {
       margin-top: 20px;
     }
+    
+    .navbar {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .body {
+      background-image: url(source/background.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: #202020;
+      color: rgb(232, 255, 228);
+      font-family: bodyFont;
+      font-size: 2em;
+    }
+
+    .logoText{
+        font-family: logoFont;
+        font-size: 3em;
+        color: rgb(88, 76, 255)
+    }
+
+    .webcontainer {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-top: 2em;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 2em; /* Add padding to the web container */
+      background-color: #00000080;
+      border: 5px groove rgba(119, 119, 255, 0.24);
+    }
+
+    .game-banner {
+      margin-bottom: 1em;
+    }
+
+    @font-face {
+        font-family: logoFont;
+        src: url(source/logo.ttf);
+    }
+
+    @font-face {
+        font-family: bodyFont;
+        src: url(source/body.ttf);
+    }
+
+    .logoImage{
+        width: auto; 
+        margin-height: 100px
+    }
+
+    .navbar{
+        background-color: #000;
+    }
+
+    #game-image {
+        width: 10em;
+    }
+
+    .game-banner{
+        padding: 2em;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .webcontainer {
+        flex-direction: column;
+        padding: 1em; /* Adjust the padding for smaller screens */
+      }
+
+      .game-banners {
+        align-self: center; /* Center the game banners */
+      }
+
+      .game-banner {
+        margin-top: 1em; /* Add some space between game banners */
+      }
+
+      #game-image {
+        width: 100%; /* Make the game image responsive */
+        border: 5px groove rgba(119, 119, 255, 0.24);
+      }
+      .footerText{
+        color:#ffffff94;
+        font-size: 1em;
+        margin-left: 10em;
+      }
+    }
   </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body>
-  <h1>Játék ajánlás</h1>
-  <label for="game-select">Válaszd ki a játékot:</label>
-  <select id="game-select">
-    <option value="">Válassz játékot</option>
-    <option value="minecraft">Minecraft</option>
-    <option value="fortnite">Fortnite</option>
-    <option value="among-us">Among Us</option>
-    <option value="valorant">Valorant</option>
-    <option value="fall-guys">Fall Guys</option>
-  </select>
+<body class="body">
+    <div class="webcontainer">
+        <div class="survey">
+            <h1 class="logoText">Game Recommendation</h1>
+            <p>Here you can select which game is recommended and not recommended by your choice.</p>
+            <label for="game-select">Please select a game:</label>
+            <select id="game-select">
+                <option value=""></option>
+                <option value="Dead Or Alive 6">Dead Or Alive 6</option>
+                <option value="Shining Resonance Refrain">Shining Resonance Refrain</option>
+                <option value="Astral Chain">Astral Chain</option>
+                <option value="Bloodrayne Betrayal Fresh Bites">Bloodrayne Betrayal Fresh Bites</option>
+                <option value="Danganronpa Decadence">Danganronpa Decadence</option>
+            </select>
 
-  <div id="game-info">
-    <h2 id="game-title"></h2>
-    <p id="game-description"></p>
-    <div>
-      <input type="radio" id="recommend" name="rating" value="recommend">
-      <label for="recommend">Ajánlott</label>
-      <input type="radio" id="not-recommend" name="rating" value="not-recommend">
-      <label for="not-recommend">Nem ajánlott</label>
+            <div id="game-info">
+                <h2 id="game-title"></h2>
+                <p id="game-description"></p>
+                <div>
+                    <input type="radio" id="recommend" name="rating" value="recommend">
+                    <label for="recommend">Recommended</label>
+                    <input type="radio" id="not-recommend" name="rating" value="not-recommend">
+                    <label for="not-recommend">Not Recommended</label>
+                </div>
+            </div>
+        </div>
+        <div class="game-banners">
+            <div class="game-banner">
+                <img id="game-image" src="source/banner.png" alt="Please select a game.">
+            </div>
+        </div>
     </div>
-  </div>
-
-  <script src="script.js"></script>
+    <p class="footerText">Made by Nikke with love at 2023.11.27 | JavaScript-Exam-A on my Github.</p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
