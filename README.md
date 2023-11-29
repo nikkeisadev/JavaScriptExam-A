@@ -4,7 +4,8 @@ Made by Nikke.
 ## The Exam's Description 🌟
 The description is writen in Hungarian, so if ya can't read it, just use Google.
 Also it's possible that the translation will contain missunderstandings too...
-### 1. Game Recommendor 
+### 1. Game Recommender 
+![Screenshot from 2023-11-29 20-25-25](https://github.com/nikkeisadev/JavaScriptExam-A/assets/137056695/a7526925-b8f5-4408-9e08-4c13eb5431e7)
 Több ismerősöd is megkeresett azzal, hogy játékokat ajánlj neki. Mivel most már annyi kérést kaptál, hogy nehéz átlátni. Ennek segítésére azt találtad ki, hogy összedobsz egy gyors weblapot, amely a következők szerint működik:
 • Lehessen egy legördülő listával (vagy bármilyen más módszerrel) választani játékok listájából (legyen legalább 5 játék)!
 • A megfelelő elem kiválasztása után (lehet gombra kattintás után vagy rögtön a listaelem kiválasztása után) a játék címe, rövid leírása töltődjön be egy div-ben, és lehessen választani 2 lehetőség közül: ajánlott vagy nem ajánlott. Ha időd marad a végén a dolgozatnak, akkor a játék borítóját is beleteheted, de ezt hagyd a végére, csak ha időd marad!
