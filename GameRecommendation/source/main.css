@@ -1,0 +1,84 @@
+#game-info {
+    margin-top: 20px;
+  }
+
+#game-image {
+    width: 10em;
+}
+
+.footerText {
+  background-color: #000000a4;
+  padding: 0.2em;
+}
+  
+.navbar {
+  background-color: #000;
+  color: #fff;
+}
+
+.body {
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #1d2024;
+  color: rgb(232, 255, 228);
+  font-family: bodyFont;
+  font-size: 2em;
+}
+
+#game-title {
+  font-size: 3em;
+}
+
+.navbar-dark .navbar-brand{
+    font-family: logoFont;
+    font-size: 1em;
+    color: rgb(255, 76, 76);
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.webcontainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em; /* Add padding to the web container */
+  background-color: #00000080;
+  border: 5px groove rgba(119, 119, 255, 0.24);
+}
+
+.survey {
+  padding: 2em;
+  background-color: rgba(29, 32, 36, 0.548);
+}
+
+.game-banner {
+  margin-bottom: 1em;
+}
+
+@media (min-width: 991.98px) {
+  main {
+    padding-left: 240px;
+  }
+}
+
+@font-face {
+    font-family: logoFont;
+    src: url(logo.ttf);
+}
+
+@font-face {
+    font-family: bodyFont;
+    src: url(body.ttf);
+}
+
+.navbar{
+    background-color: #000;
+}
+
+.game-banner{
+    padding: 2em;
+}
