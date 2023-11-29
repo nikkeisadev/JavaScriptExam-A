@@ -1,6 +1,7 @@
 # JavaScriptExam-A 🔱
 Yellow Flower's Bloom 🟡 Welcome! This is my first uploaded JavaScipt exam for education. ⚡️
 Made by Nikke. 
+![image](https://github.com/nikkeisadev/JavaScriptExam-A/assets/137056695/05cc4e3a-49a2-4460-a4b5-a9b938426e9d)
 ## The Exam's Description 🌟
 The description is writen in Hungarian, so if ya can't read it, just use Google.
 Also it's possible that the translation will contain missunderstandings too...
