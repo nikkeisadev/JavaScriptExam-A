@@ -20,7 +20,7 @@ Feladatod a következő:
 • Az értékek kiírásánál a 100 cm feletti mérések pirossal jelenjenek meg, a többi érték az alapértelmezett színnel (vagy amit választasz).
 • Legyen egy másik gomb is, amelynek hatására a hómennyiségek a [-10,10] zárt intervallum értékei között változnak véletlen szám generálásával, amely a növekedés mértékét jelenti! Tehát ha pl. -10-et kapsz, akkor a hómennyiség mértéke 10-zel csökken. Minden városnál külön értéket generálj! A generálás után ugyanazzal a szabállyal írd ki újra az értéket, mint az előbb!
 ### 3. Roguelite Game
-![Screenshot from 2023-11-29 21-51-59](https://github.com/nikkeisadev/JavaScriptExam-A/assets/137056695/ebe733e5-a287-4ced-a3b8-b0762ae1a70e)
+![Screenshot from 2023-11-29 22-52-25](https://github.com/nikkeisadev/JavaScriptExam-A/assets/137056695/d7f9e657-6ab3-4972-8fa7-7769cded38d2)
 Manapság népszerűek a „Roguelite” típusú játékok, amely azt jelenti, hogy a játék szereplőivel minél tovább próbálod a játékot elvinni, és ha legyőzik a főszereplőket, akkor az elejétől kell kezdeni a játékot. Itt azonban mindig valamit átviszel az előző végigjátszás alkalmával, hogy könnyebb legyen a következő. Ki szeretnéd próbálni, hogy milyen kihívásokkal jár ilyen játék készítése, de ehhez még az első lépést kell megtenned, ahol a következőket kell megoldanod:
 ◦ A játékban van a játékos és van az ellenfél, akit le kell győzni. A játékos és az ellenfél életereje (HP) 200-ról indul, a játékos ereje 20-ről indul, az ellenfél ereje fixen mindig 40.
 ◦ A weblapon legyen egy gomb, „játék indítása”, aminek segítségével az életerők az alapértelmezett 200-ra, és a játékos ereje 20-ra lesz állítva.
