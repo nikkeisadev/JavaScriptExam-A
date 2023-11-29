@@ -1,9 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hóesés szimuláció</title>
+  <title>Snowfall.io</title>
+  <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <style>
+    body {
+      background-image: url('source/Background.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: rgba(83, 83, 83, 0.486);
+    }
+    
+    .navbar-brand {
+      font-family: 'Comfortaa';
+      font-size: 22px;
+    }
+
+    .container {
+      padding: 2em;
+      background-color: #212529;
+      color: white;
+    }
+
     .snowfall {
       font-size: 18px;
       margin-bottom: 10px;
@@ -14,14 +33,39 @@
     .snowfall .red {
       color: red;
     }
+
+    .comfortaa {
+      font-family: 'Comfortaa';
+    }
   </style>
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Snowfall.io</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cariers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Support (not avaiable at the moment)</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <div class="container">
-    <h1>Hóesés szimuláció</h1>
+    <h1 class="comfortaa">Welcome to Snowfall.io!</h1>
+    <p class="comfortaa">The perfect site for generating Snowfalling test informations.</p>
     <div class="snowfall" id="snowfall-display"></div>
-    <button class="btn btn-primary" onclick="generateSnowfall()">Generálás</button>
-    <button class="btn btn-secondary" onclick="changeSnowfall()">Változtatás</button>
+    <button class="btn btn-primary" onclick="generateSnowfall()">Generate</button>
+    <button class="btn btn-secondary" onclick="changeSnowfall()">Change</button>
   </div>
 
   <script src="script.js"></script>

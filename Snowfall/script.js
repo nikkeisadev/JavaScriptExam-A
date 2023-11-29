@@ -1,3 +1,4 @@
+//Cities list.
 const cities = [
     { name: "New York", snowfall: 0 },
     { name: "London", snowfall: 0 },
@@ -21,6 +22,7 @@ const cities = [
     { name: "Mexico City", snowfall: 0 }
   ];
 
+//Generating the snowfall data.
   function generateSnowfall() {
     const snowfallDisplay = document.getElementById("snowfall-display");
     snowfallDisplay.innerHTML = "";
@@ -41,11 +43,12 @@ const cities = [
     }
   }
 
+  //Random generating numbers.
   function changeSnowfall() {
     const snowfallDisplay = document.getElementById("snowfall-display");
 
     for (let i = 0; i < cities.length; i++) {
-      const snowfallChange = Math.floor(Math.random() * 21) - 10; // -10 és 10 közötti véletlen szám generálása
+      const snowfallChange = Math.floor(Math.random() * 21) - 10;
       cities[i].snowfall += snowfallChange;
 
       const snowfallElement = snowfallDisplay.children[i];
