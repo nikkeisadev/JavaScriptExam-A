@@ -1,37 +1,59 @@
-let playerHP = 200;
-let playerPower = 20;
-let enemyHP = 200;
-const enemyPower = 40;
-let rounds = 0;
+var playerHP = 200;
+var playerPower = 20;
+var enemyHP = 200;
+var enemyPower = 40;
+var rounds = 0;
 
 function startGame() {
   playerHP = 200;
   playerPower = 20;
   enemyHP = 200;
   rounds = 0;
-  updateGameInfo("Játék indítva! Játékos életereje: " + playerHP + ", Játékos ereje: " + playerPower + ", Ellenfél életereje: " + enemyHP);
+  updateGameStatus("Game started! Honoka's health: " + playerHP + ", Marie Rose's health: " + enemyHP);
 }
 
 function attack() {
-  const playerDamage = Math.floor(Math.random() * (playerPower * 2 - playerPower + 1)) + playerPower;
-  const enemyDamage = Math.floor(Math.random() * (enemyPower * 2 - enemyPower + 1)) + enemyPower;
+  var playerDamage = Math.floor(Math.random() * (playerPower * 2 - playerPower + 1)) + playerPower;
+  var enemyDamage = Math.floor(Math.random() * (enemyPower * 2 - enemyPower + 1)) + enemyPower;
 
   playerHP -= enemyDamage;
   enemyHP -= playerDamage;
   rounds++;
 
+  updateGameStatus(
+    "Round(s): " + rounds,
+    "Honoka's damage: " + playerDamage,
+    "Marie Rose's  damage: " + enemyDamage,
+    "Honoka's Health: " + playerHP,
+    "Marie Rose's  Health: " + enemyHP
+  );
+
   if (playerHP <= 0) {
-    playerHP = 200;
     playerPower += 10;
-    updateGameInfo("Vesztettél a körgyőzelem után! Játék újrakezdve. Játékos életereje: " + playerHP + ", Játékos ereje: " + playerPower + ", Ellenfél életereje: " + enemyHP);
-  } else if (enemyHP <= 0) {
-    updateGameInfo("Győzelem! Ellenfél legyőzve " + rounds + " körben!");
-  } else {
-    updateGameInfo("Támadás! Játékos sebzése: " + playerDamage + ", Ellenfél sebzése: " + enemyDamage + ". Játékos életereje: " + playerHP + ", Ellenfél életereje: " + enemyHP);
+    playerHP = 200;
+    updateGameStatus("Honoka lost this round! Starting a new round. Honoka's power is upgraded: " + playerPower);
+    playerHP = 200;
+    enemyHP = 200;
+  }
+
+  if (enemyHP <= 0) {
+    gameOver();
   }
 }
 
-function updateGameInfo(message) {
-  const gameInfo = document.getElementById("game-info");
-  gameInfo.textContent = message;
+function gameOver() {
+  updateGameStatus("Honoka WIN! Round to complete victory: " + rounds);
+  playerHP = 200;
+  enemyHP = 200;
+}
+
+function updateGameStatus(...messages) {
+  var gameStatusElement = document.getElementById("game-status");
+  gameStatusElement.innerHTML = "";
+
+  for (var i = 0; i < messages.length; i++) {
+    var messageElement = document.createElement("div");
+    messageElement.textContent = messages[i];
+    gameStatusElement.appendChild(messageElement);
+  }
 }

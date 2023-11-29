@@ -1,13 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Roguelite Játék</title>
+  <title>DOA Honoka VS Marie Rose</title>
+  <style>
+
+    @font-face {
+      font-family: bodyFont;
+      src: url(source/body.ttf);
+    }
+
+    .body {
+      font-family: bodyFont;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2em;
+      margin-bottom: 2em;
+    }
+  
+    .game-info {
+      flex-grow: 1;
+      margin-right: 20px;
+      font-size: 2em;
+      font-family: bodyFont;  
+      display: inline-block;  
+    }
+  
+    .charactersInline {
+      display: inline-block;
+      align-items: center;
+      width: 20em;
+      margin-right: 20em;
+    }
+
+    .title {
+      font-family: bodyFont;
+      font-size: 2em;
+    }
+
+    #container {
+      margin-left: auto;
+      margin-right: auto;
+      float:right;
+    }
+
+  </style>
 </head>
 <body>
-  <h1>Roguelite Játék</h1>
-  <button onclick="startGame()">Játék indítása</button>
-  <button onclick="attack()">Támadás</button>
-  <p id="game-info"></p>
+  <div id="container">
+    <div class="game-info">
+      <h1 class="title">Honoka VS Marie Rose</h1>
+      <div id="rounds">Please press START to begin!</div>
+      <div id="player-hp">Made by Nikke.</div>
+      <div id="player-damage">On 2023.11.29</div>
+      <div id="enemy-hp">Javascript-Exam-A</div>
+      <div id="enemy-damage">Rougelite game design,</div>
+      <div id="game-status">with DOA characters.</div>
+      <button onclick="startGame()">START</button>
+      <button onclick="attack()">ATTACK</button>
+    </div>
+    <img class="charactersInline" src="source/Honoka.png" alt="Honoka(Player)">
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
