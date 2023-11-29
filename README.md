@@ -4,7 +4,8 @@ Made by Nikke.
 ## The Exam's Description 🌟
 The description is writen in Hungarian, so if ya can't read it, just use Google.
 Also it's possible that the translation will contain missunderstandings too...
-### 1. Game Recommendor 
+### 1. Game Recommender 
+![Screenshot from 2023-11-29 20-25-25](https://github.com/nikkeisadev/JavaScriptExam-A/assets/137056695/a7526925-b8f5-4408-9e08-4c13eb5431e7)
 Több ismerősöd is megkeresett azzal, hogy játékokat ajánlj neki. Mivel most már annyi kérést kaptál, hogy nehéz átlátni. Ennek segítésére azt találtad ki, hogy összedobsz egy gyors weblapot, amely a következők szerint működik:
 • Lehessen egy legördülő listával (vagy bármilyen más módszerrel) választani játékok listájából (legyen legalább 5 játék)!
 • A megfelelő elem kiválasztása után (lehet gombra kattintás után vagy rögtön a listaelem kiválasztása után) a játék címe, rövid leírása töltődjön be egy div-ben, és lehessen választani 2 lehetőség közül: ajánlott vagy nem ajánlott. Ha időd marad a végén a dolgozatnak, akkor a játék borítóját is beleteheted, de ezt hagyd a végére, csak ha időd marad!
@@ -17,6 +18,7 @@ Feladatod a következő:
 • Az értékek kiírásánál a 100 cm feletti mérések pirossal jelenjenek meg, a többi érték az alapértelmezett színnel (vagy amit választasz).
 • Legyen egy másik gomb is, amelynek hatására a hómennyiségek a [-10,10] zárt intervallum értékei között változnak véletlen szám generálásával, amely a növekedés mértékét jelenti! Tehát ha pl. -10-et kapsz, akkor a hómennyiség mértéke 10-zel csökken. Minden városnál külön értéket generálj! A generálás után ugyanazzal a szabállyal írd ki újra az értéket, mint az előbb!
 ### 3. Roguelite Game
+![Screenshot from 2023-11-29 21-51-59](https://github.com/nikkeisadev/JavaScriptExam-A/assets/137056695/ebe733e5-a287-4ced-a3b8-b0762ae1a70e)
 Manapság népszerűek a „Roguelite” típusú játékok, amely azt jelenti, hogy a játék szereplőivel minél tovább próbálod a játékot elvinni, és ha legyőzik a főszereplőket, akkor az elejétől kell kezdeni a játékot. Itt azonban mindig valamit átviszel az előző végigjátszás alkalmával, hogy könnyebb legyen a következő. Ki szeretnéd próbálni, hogy milyen kihívásokkal jár ilyen játék készítése, de ehhez még az első lépést kell megtenned, ahol a következőket kell megoldanod:
 ◦ A játékban van a játékos és van az ellenfél, akit le kell győzni. A játékos és az ellenfél életereje (HP) 200-ról indul, a játékos ereje 20-ről indul, az ellenfél ereje fixen mindig 40.
 ◦ A weblapon legyen egy gomb, „játék indítása”, aminek segítségével az életerők az alapértelmezett 200-ra, és a játékos ereje 20-ra lesz állítva.
