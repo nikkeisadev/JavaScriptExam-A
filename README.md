@@ -1,6 +1,7 @@
 # JavaScriptExam-A 🔱
 Yellow Flower's Bloom 🟡 Welcome! This is my first uploaded JavaScipt exam for education. ⚡️
 Made by Nikke. 
+![image](https://github.com/nikkeisadev/JavaScriptExam-A/assets/137056695/05cc4e3a-49a2-4460-a4b5-a9b938426e9d)
 ## The Exam's Description 🌟
 The description is writen in Hungarian, so if ya can't read it, just use Google.
 Also it's possible that the translation will contain missunderstandings too...
@@ -12,6 +13,7 @@ Több ismerősöd is megkeresett azzal, hogy játékokat ajánlj neki. Mivel mos
 • A játék címét, és adatait próbáld meg úgy megoldani, hogy nem statikusan helyezed el az oldalra, hanem pl. listába tárolod el az adatokat, és onnan olvasod ki!
 • A megfelelő értékelés kiválasztása esetén mentsd el, hogy ha a listából más elemet választasz ki, és visszatérsz hozzá, megmaradjon a döntés!
 ### 2. Snowfall
+![image](https://github.com/nikkeisadev/JavaScriptExam-A/assets/137056695/2dafb4a5-81ac-4e86-8af1-0063652f656d)
 Több külföldi városban is télen problémát okoz az óriási havazás. A hómennyiség mérésére a későbbiekben lesznek majd eszközök, amelyek valós információt szolgáltatnak, de most jelenleg még a módszer kidolgozását véletlen számok generálásával fogod szimulálni.
 Feladatod a következő:
 • Legyen az oldalon egy „generálás” gomb, amelyre kattintva Bootstrap rács segítségével kis kijelzőn 4 oszlopban, közepes vagy nagyobb kijelző esetén 4 oszlopban a program generál 20 város jelenlegi hómennyisége mm-ben. A mennyiségek értékei 40 és 120 cm között legyenek!
