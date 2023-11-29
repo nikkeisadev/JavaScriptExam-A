@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DOA Honoka VS Marie Rose</title>
+  <title>NAPSTABLOOK!!!</title>
   <style>
 
     @font-face {
@@ -9,16 +9,27 @@
       src: url(source/body.ttf);
     }
 
-    .body {
+    body {
+      background-image: url('source/Background.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: rgba(83, 83, 83, 0.486);
+    }
+    
+
+    .container {
       font-family: bodyFont;
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 2em;
       margin-bottom: 2em;
+      color: white;
     }
   
     .game-info {
+      
+      background-color: rgba(0, 0, 0, 0.37);
       flex-grow: 1;
       margin-right: 20px;
       font-size: 2em;
@@ -29,8 +40,8 @@
     .charactersInline {
       display: inline-block;
       align-items: center;
-      width: 20em;
-      margin-right: 20em;
+      width: 10em;
+      margin-right: 26em;
     }
 
     .title {
@@ -47,19 +58,19 @@
   </style>
 </head>
 <body>
-  <div id="container">
+  <div id="container" class="container">
     <div class="game-info">
-      <h1 class="title">Honoka VS Marie Rose</h1>
+      <h1 class="title">Napstablook bossfigt!</h1>
       <div id="rounds">Please press START to begin!</div>
       <div id="player-hp">Made by Nikke.</div>
       <div id="player-damage">On 2023.11.29</div>
       <div id="enemy-hp">Javascript-Exam-A</div>
       <div id="enemy-damage">Rougelite game design,</div>
-      <div id="game-status">with DOA characters.</div>
+      <div id="game-status">with Undertale characters.</div>
       <button onclick="startGame()">START</button>
       <button onclick="attack()">ATTACK</button>
     </div>
-    <img class="charactersInline" src="source/Honoka.png" alt="Honoka(Player)">
+    <img class="charactersInline" src="source/Napstablook_battle_idle.gif" alt="Napstablook(Enemy)">
   </div>
   <script src="script.js"></script>
 </body>

@@ -9,7 +9,7 @@ function startGame() {
   playerPower = 20;
   enemyHP = 200;
   rounds = 0;
-  updateGameStatus("Game started! Honoka's health: " + playerHP + ", Marie Rose's health: " + enemyHP);
+  updateGameStatus("Game started! Player's health: " + playerHP + ", Napstablook's health: " + enemyHP);
 }
 
 function attack() {
@@ -22,16 +22,16 @@ function attack() {
 
   updateGameStatus(
     "Round(s): " + rounds,
-    "Honoka's damage: " + playerDamage,
-    "Marie Rose's  damage: " + enemyDamage,
-    "Honoka's Health: " + playerHP,
-    "Marie Rose's  Health: " + enemyHP
+    "Player's damage: " + playerDamage,
+    "Napstablook's  damage: " + enemyDamage,
+    "Player's Health: " + playerHP,
+    "Napstablook's  Health: " + enemyHP
   );
 
   if (playerHP <= 0) {
     playerPower += 10;
     playerHP = 200;
-    updateGameStatus("Honoka lost this round! Starting a new round. Honoka's power is upgraded: " + playerPower);
+    updateGameStatus("The Player lost this round! Starting a new round. Player's power is upgraded: " + playerPower);
     playerHP = 200;
     enemyHP = 200;
   }
@@ -42,7 +42,7 @@ function attack() {
 }
 
 function gameOver() {
-  updateGameStatus("Honoka WIN! Round to complete victory: " + rounds);
+  updateGameStatus("Player WIN! Round to complete victory: " + rounds);
   playerHP = 200;
   enemyHP = 200;
 }
